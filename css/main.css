@@ -1,16 +1,22 @@
 /*Import Bootstrap*/
+
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+
+/*For the domain and range*/
 .title {
 	fill: black;
 	font-size: 14px;
 }
 
+/*For the Axes title labels*/
 .label {
-	fill: red;
+	fill: white;
 	font-weight: bold;
 	font-family: calibri;
 	font-size: 16px;
 }
+
+
 .axis line, .axis path {
 	fill: none;
 	stroke: #000;
@@ -20,4 +26,20 @@
 
 .bar {
 	fill: red;
+	opacity: .30;
 }
+
+/*Title of the chart*/
+.graphTitle {
+	color: white;
+	text-align: center;
+}
+
+body {
+	background-color: #666666;
+}
+
+.buttons {
+	text-align: center;
+}
+

@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Data Exploration Tool</title>
+		<title>Violence in Seattle (2014)</title>
 
 		<!-- Libraries -->
 		<script src="https://code.jquery.com/jquery.min.js"></script>
@@ -19,27 +19,30 @@
 
 
 <body class="container">
+
+	<!-- Buttons that will allow for choosing Precincts -->
+	<div class="buttons">
 		<div class="btn-group" data-toggle="buttons">
-		  <label class="btn btn-primary">
-		    <input value="CITYWIDE" class="precinct" type="radio" name="options" id="option1" autocomplete="off">City-Wide
-		  </label>
 		  <label class="btn btn-primary active">
-		    <input value="NORTH" type="radio" class="precinct" name="options" id="option2" autocomplete="off" checked>North
+		    <input value="NORTH" class="precinct" type="radio" name="options" id="option1" autocomplete="off" checked>North Precinct
 		  </label>
+		  <label class="btn btn-primary">
+		    <input value="SOUTH" type="radio" class="precinct" name="options" id="option2" autocomplete="off">South Precinct
+		  </label>
+		  <label class="btn btn-primary">
+		  	<input value="EAST" type="radio" class="precinct" name="options" id="option3" autocomplete="off">East Precinct
+		  </label>
+		  <label class="btn btn-primary">
+		  	<input value="WEST" type="radio" class="precinct" name="options" id="option4" autocomplete="off">West Precinct
+		</div>
+	</div>
+
+		<!-- Title of the chart -->
+		<div class="graphTitle">
+			<h2>Violent Crime in Seattle Crime During 2014</h2>
 		</div>
 
-		<div class="btn-group" data-toggle="buttons">
-		  <label class="btn btn-primary">
-		    <input value = "VIOLENT_CRIMES_TOTAL" type="radio" name="options" id="option1" autocomplete="off">Violent Crimes
-		  </label>
-		  <label class="btn btn-primary active">
-		    <input value = "HOMICIDE" type="radio" name="options" id="option2" autocomplete="off" checked>Homicides
-		  </label>
-		</div>
-
-
-		<h2>Seattle Crime in 2014</h2>
-
-		<div id="vis"></div>
+		<!-- Where the chart will be stored -->
+		<div id="div"></div>
 	</body>
 </html>
