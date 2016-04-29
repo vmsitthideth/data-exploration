@@ -94,7 +94,7 @@ $(function() {
 				return d.PRECINCT == precinct
 			})
 
-			//	Alphabetical sort 
+			//	Alphabetical sort from module 8
 			.sort(function(a,b) {
 				if(a.BEAT < b.BEAT) return -1;
 				if(a.BEAT > b.BEAT) return 1;
