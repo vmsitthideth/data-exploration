@@ -14,7 +14,32 @@
 
 		<!-- CSS file -->
 		<link rel="stylesheet" href="css/main.css"/>
+		<script src="js/main.js"></script>
 	</head>
 
 
 <body class="container">
+		<div class="btn-group" data-toggle="buttons">
+		  <label class="btn btn-primary">
+		    <input value="CITYWIDE" class="precinct" type="radio" name="options" id="option1" autocomplete="off">City-Wide
+		  </label>
+		  <label class="btn btn-primary active">
+		    <input value="NORTH" type="radio" class="precinct" name="options" id="option2" autocomplete="off" checked>North
+		  </label>
+		</div>
+
+		<div class="btn-group" data-toggle="buttons">
+		  <label class="btn btn-primary">
+		    <input value = "VIOLENT_CRIMES_TOTAL" type="radio" name="options" id="option1" autocomplete="off">Violent Crimes
+		  </label>
+		  <label class="btn btn-primary active">
+		    <input value = "HOMICIDE" type="radio" name="options" id="option2" autocomplete="off" checked>Homicides
+		  </label>
+		</div>
+
+
+		<h2>Seattle Crime in 2014</h2>
+
+		<div id="vis"></div>
+	</body>
+</html>

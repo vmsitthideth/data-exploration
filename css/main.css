@@ -1,0 +1,23 @@
+/*Import Bootstrap*/
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+.title {
+	fill: black;
+	font-size: 14px;
+}
+
+.label {
+	fill: red;
+	font-weight: bold;
+	font-family: calibri;
+	font-size: 16px;
+}
+.axis line, .axis path {
+	fill: none;
+	stroke: #000;
+	text-anchor: middle;
+}
+
+
+.bar {
+	fill: red;
+}
